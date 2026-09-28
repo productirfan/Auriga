@@ -1,4 +1,4 @@
-export type DocumentStatus = 'In progress' | 'Ready for chat' | 'Digitised';
+export type DocumentStatus = 'In progress' | 'Ready for chat' | 'Digitised' | 'Failed';
 export type DocumentItem = { name: string; size: string; date: string; uploader: string; status: DocumentStatus };
 export const documents: DocumentItem[] = [
   { name: 'Claims_Adjudication_Guidelines_FY2026.pdf', size: '4.8 MB', date: 'Aug 28, 2026', uploader: 'Sarah Mitchell', status: 'In progress' },
@@ -25,7 +25,7 @@ export const documents: DocumentItem[] = [
   { name: 'Skilled_Nursing_Facility_Claims_Manual.pdf', size: '6.4 MB', date: 'Aug 16, 2026', uploader: 'Daniel Foster', status: 'Ready for chat' },
   { name: 'Ambulance_Transport_Coding_Reference_2026.xlsx', size: '2.2 MB', date: 'Aug 15, 2026', uploader: 'Aisha Patel', status: 'Digitised' },
   { name: 'Preventive_Care_Benefit_Coverage_2026.pdf', size: '3.1 MB', date: 'Aug 15, 2026', uploader: 'Sarah Mitchell', status: 'Ready for chat' },
-  { name: 'Clinical_Documentation_Standards_for_Claims.docx', size: '2.7 MB', date: 'Aug 14, 2026', uploader: 'Olivia Bennett', status: 'In progress' },
+  { name: 'Clinical_Documentation_Standards_for_Claims.docx', size: '2.7 MB', date: 'Aug 14, 2026', uploader: 'Olivia Bennett', status: 'Failed' },
   { name: 'Surgical_Assistant_Reimbursement_Rules.xlsx', size: '1.4 MB', date: 'Aug 14, 2026', uploader: 'Michael Rodriguez', status: 'Digitised' },
   { name: 'Laboratory_Services_Fee_Schedule_2026.pdf', size: '5.9 MB', date: 'Aug 13, 2026', uploader: 'Daniel Foster', status: 'Ready for chat' },
   { name: 'Newborn_and_Maternity_Claims_Review_Guide.docx', size: '2.4 MB', date: 'Aug 12, 2026', uploader: 'Olivia Bennett', status: 'Digitised' },
