@@ -64,8 +64,9 @@
 .is-collapsed .nav-item{height:32px;width:32px;margin:0 auto;padding:0;gap:0;justify-content:center;border-radius:7px}
 .is-collapsed .nav-item svg{width:18px;height:18px;stroke-width:2}
 .is-collapsed .chats-section{padding:12px 8px 0;display:flex;flex-direction:column;align-items:center;gap:8px}
-.is-collapsed .pinned-heading,.is-collapsed .chats-heading{width:32px;height:32px;gap:0;justify-content:center;border-radius:7px;transition:width .16s ease-out}
-.is-collapsed .pinned-tooltip-anchor{width:32px;height:32px;margin:0 auto}
+.is-collapsed .pinned-heading{width:24px;height:24px;gap:0;justify-content:center;border-radius:7px;transition:width .16s ease-out}
+.is-collapsed .chats-heading{width:32px;height:32px;gap:0;justify-content:center;border-radius:7px;transition:width .16s ease-out}
+.is-collapsed .pinned-tooltip-anchor{width:24px;height:24px;margin:0 auto}
 .is-collapsed .pinned-heading svg:first-child,.is-collapsed .chats-heading svg:first-child{width:18px;height:18px;stroke-width:2}
 .is-collapsed .chats-heading:hover{background:transparent}
 .user-footer{transition:padding .16s ease-out}
