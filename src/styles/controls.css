@@ -1,0 +1,28 @@
+/* Workspace controls and the divided primary upload action. */
+.workspace-header{border-bottom-color:var(--border-header)}
+.breadcrumb{color:var(--text-breadcrumb)}
+.breadcrumb b{color:var(--text-breadcrumb)}
+.table-wrap{overflow-y:auto;overflow-x:hidden;scrollbar-width:thin;scrollbar-color:#d1d5db transparent}
+.table-wrap::-webkit-scrollbar{width:7px}
+.table-wrap::-webkit-scrollbar-thumb{background:#d1d5db;border-radius:8px}
+.table-wrap::-webkit-scrollbar-track{background:transparent}
+.table-header{position:sticky;top:0;z-index:2;background:#fff;border-bottom-color:var(--border-table)}
+.table-body{flex:none;overflow:visible;min-height:0}
+.table-heading{width:100%;height:100%;display:flex;align-items:center;justify-content:flex-start;gap:6px;padding:0;border:0;background:transparent;color:inherit;font:inherit;text-align:left;white-space:nowrap;cursor:pointer}
+.sort-indicator{position:relative;display:inline-block;width:18px;height:18px;flex:none;opacity:0;background:#9f9f9f;-webkit-mask:url('/icons/chevron-up-down.svg') center/contain no-repeat;mask:url('/icons/chevron-up-down.svg') center/contain no-repeat;transition:opacity .12s ease}
+.sort-indicator::after{content:"";position:absolute;inset:0;background:var(--blue);-webkit-mask:inherit;mask:inherit;opacity:0}
+.sort-indicator.sort-asc::after{opacity:1;clip-path:inset(0 0 50% 0)}
+.sort-indicator.sort-desc::after{opacity:1;clip-path:inset(50% 0 0 0)}
+.table-heading:hover .sort-indicator,.table-heading:focus-visible .sort-indicator,.table-heading.is-sorted .sort-indicator{opacity:1}
+.sort-indicator svg.active{color:var(--blue);stroke-width:2.4}
+.table-heading:focus-visible{outline:2px solid #93c5fd;outline-offset:-3px;border-radius:3px}
+.header-button,.filter-button,.search-box{border-color:var(--border-controls)}
+.filter-button{font-weight:500}
+.upload-split{height:35px;width:121px;flex:none;display:flex;align-items:stretch;overflow:hidden;border:1px solid var(--blue);border-radius:8px;background:var(--blue);color:white}
+.upload-main,.upload-more{height:100%;border:0;background:transparent;color:inherit;font:inherit;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background .14s}
+.upload-main{flex:1;gap:6px;font-size:14px;font-weight:500;padding:0 9px}
+.upload-main svg{width:18px;height:18px;stroke-width:1.8}
+.upload-more{width:32px;flex:none;border-left:1px solid #ffffff55}
+.upload-more svg{width:15px;height:15px;stroke-width:1.8}
+.upload-main:hover,.upload-more:hover{background:#1266d9}
+.upload-main:focus-visible,.upload-more:focus-visible{outline:2px solid #93c5fd;outline-offset:-3px}

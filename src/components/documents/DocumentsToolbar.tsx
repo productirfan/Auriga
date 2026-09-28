@@ -1,0 +1,2 @@
+import { ChevronDown, Search } from 'lucide-react';
+export function DocumentsToolbar({query,onQueryChange}: {query:string;onQueryChange:(value:string)=>void}) { return <div className="documents-toolbar"><label className="search-box"><Search/><input value={query} onChange={e=>onQueryChange(e.target.value)} placeholder="Search documents..."/></label><div className="filter-actions"><button className="filter-button">Status<ChevronDown/></button><button className="filter-button">Date<ChevronDown/></button></div></div>; }

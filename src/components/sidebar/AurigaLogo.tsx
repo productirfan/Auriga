@@ -1,0 +1,1 @@
+export function AurigaLogo({collapsed=false}: {collapsed?:boolean}) { return <span className={`brand-logo-wrap ${collapsed?'is-collapsed':''}`}><img className="brand-logo-full" src="/icons/auriga-global@2x.png" alt="Auriga AI"/><img className="brand-logo-mark" src="/icons/auriga-mark.svg" alt="" aria-hidden="true"/></span>; }

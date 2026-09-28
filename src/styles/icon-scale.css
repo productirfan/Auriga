@@ -1,0 +1,20 @@
+/* Consistent scale for the primary Lucide interface icons. */
+.nav-item svg,
+.brand-actions svg,
+.expand-preview svg,
+.org-chevron,
+.pinned-heading svg:first-child,
+.chats-heading svg:first-child,
+.user-footer .footer-menu svg,
+.chat-menu svg,
+.header-button svg,
+.upload-split svg,
+.meta-item>svg,
+.search-box>svg,
+.filter-button svg,
+.row-menu svg{width:18px;height:18px;stroke-width:1.8}
+.upload-more svg{width:15px;height:15px}
+.filter-button svg{width:14px;height:14px}
+.checkbox svg{width:13px;height:13px;stroke-width:2}
+.sidebar svg,.workspace-card svg{stroke-width:1.8}
+.sidebar button svg,.workspace-card button svg{stroke-width:2}

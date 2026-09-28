@@ -1,0 +1,5 @@
+import { Box, ChartNoAxesColumn, Ellipsis, SquarePen, Table, type LucideIcon } from 'lucide-react';
+import { Tooltip } from '../ui/Tooltip';
+const items = [{ label:'New chat', Icon:SquarePen },{ label:'Dashboard', Icon:ChartNoAxesColumn },{ label:'Logs', Icon:Table },{ label:'Workspace', Icon:Box }];
+function NavButton({label,Icon,collapsed}: {label:string;Icon:LucideIcon;collapsed:boolean}) { return <Tooltip content={label} placement="right" disabled={!collapsed} className="nav-tooltip-anchor"><button aria-label={label} className={`nav-item ${label==='Workspace'?'selected':''}`}><Icon/><span>{label}</span></button></Tooltip>; }
+export function PrimaryNav({collapsed}: {collapsed:boolean}) { return <nav className="primary-nav">{items.map(({label,Icon})=><NavButton key={label} label={label} Icon={Icon} collapsed={collapsed}/>)}<Tooltip content="More" placement="right" disabled={!collapsed} className="nav-tooltip-anchor"><button aria-label="More" className="nav-item"><Ellipsis/><span>More</span></button></Tooltip></nav>; }

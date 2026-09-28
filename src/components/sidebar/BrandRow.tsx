@@ -1,0 +1,3 @@
+import { PanelLeftClose, PanelLeftOpen, Search } from 'lucide-react';
+import { AurigaLogo } from './AurigaLogo';
+export function BrandRow({collapsed,onToggle}: {collapsed:boolean;onToggle:()=>void}) { return <div className="brand-row"><div className="brand-name"><AurigaLogo collapsed={collapsed}/></div>{collapsed?<button className="expand-preview" aria-label="Expand sidebar" onClick={onToggle}><PanelLeftOpen/></button>:<div className="brand-actions"><button className="icon-ghost" aria-label="Search"><Search/></button><button className="icon-ghost" aria-label="Collapse sidebar" onClick={onToggle}><PanelLeftClose/></button></div>}</div>; }
