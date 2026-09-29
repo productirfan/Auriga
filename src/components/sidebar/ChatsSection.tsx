@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect, useRef, useState, type KeyboardEvent } from 'react';
+import { useEffect, useLayoutEffect, useRef, useState, type KeyboardEvent as ReactKeyboardEvent } from 'react';
 import { createPortal } from 'react-dom';
 import { ChevronDown, ChevronRight, EllipsisVertical, MessageCircle, Pin } from 'lucide-react';
 import { Tooltip } from '../ui/Tooltip';
@@ -76,7 +76,7 @@ export function ChatsSection({collapsed}: {collapsed:boolean}) {
   },[flyoutOpen]);
 
   const openChat=()=>setFlyoutOpen(false);
-  const handleTriggerKeyDown=(event:KeyboardEvent<HTMLButtonElement>)=>{
+  const handleTriggerKeyDown=(event:ReactKeyboardEvent<HTMLButtonElement>)=>{
     if(collapsed&&(event.key==='ArrowDown'||event.key==='ArrowUp')){event.preventDefault();openFirstChat();}
   };
   return <div className="chats-section">
